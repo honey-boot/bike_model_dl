@@ -28,3 +28,49 @@ The model uses the following 13 features:
 ```bash
 git clone https://github.com/your-username/bike-rental-prediction.git
 cd bike-rental-prediction
+
+2. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3. Run Streamlit App
+bash
+Copy
+Edit
+streamlit run app.py
+🧾 Requirements
+nginx
+Copy
+Edit
+streamlit
+tensorflow
+scikit-learn
+pandas
+numpy
+(Also available in requirements.txt)
+
+🗂️ Project Structure
+graphql
+Copy
+Edit
+📁 bike-rental-prediction/
+├── app.py               # Streamlit app
+├── bike_model.h5        # Trained deep learning model
+├── scaler.pkl           # Saved StandardScaler for input preprocessing
+├── hour.csv             # Raw dataset (optional)
+├── requirements.txt     # Python dependencies
+└── README.md            # Project overview
+📈 Model Info
+Architecture: 3 Dense layers with ReLU activations and Dropout
+
+Loss Function: MSE (Mean Squared Error)
+
+Optimizer: Adam
+
+Evaluation Metric: MAE (Mean Absolute Error)
+
+📊 Sample UI Screenshot
+<!-- Optional: add a screenshot -->
+
+
